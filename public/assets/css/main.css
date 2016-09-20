@@ -1,0 +1,403 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* Global properties */
+
+* {
+  border: 0px solid #000;
+}
+
+body {
+  background: url("../img/swirl_pattern.png") repeat left top;
+  font-family: 'Hind', sans-serif;
+}
+
+a:link, a:visited, a:active {
+  color: #aaa;
+}
+
+a:hover {
+  color: #222;
+}
+
+/* Sections */
+
+.page-header-corner {
+  border-bottom: 20px solid #ddd;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #ddd;
+  border-top: 20px solid  transparent;
+  display: inline-block;
+  height: 0;
+  left: 30px;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+.page-header {
+  background-color: rgba(255, 255, 255, 0.925);
+  border-left: 0px solid #eee;
+  border-top: 1px solid #eee;
+  height: 40px;
+  left: 70px;
+  margin: 0;
+  padding: 0 20px 0 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+
+.page-header i {
+  margin: 17px 0 0 10px;
+  padding: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.925);
+  left: 30px;
+  margin: 0;
+  padding: 20px 40px 50px 40px;
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+
+header {
+  margin: 30px 0;
+  overflow: auto;
+}
+
+.profile-info {
+  color: #aaa;
+  border-left: solid 0px #ddd;
+  float:left;
+  min-width: 320px;
+  padding: 0 0 20px 0;
+  width: 30%;
+}
+
+.profile-info:first-of-type {
+  border-left: solid 0px #ddd;
+  clear: both;
+}
+
+.statement {
+  font-size: 1.4em;
+  max-width: 70%;
+  min-width: 220px;
+}
+
+.footnote {
+  margin-top: 150px;
+}
+
+/* Custom elements */
+
+.profile-pic {
+  border-left: solid 0px #ddd;
+  float: left;
+  margin: 0;
+  padding: 0 0 20px 0px;
+  width: 100px;
+}
+
+.resume-title {
+  color: #333;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+.job-title {
+  color: #333;
+  font: normal 0.8em/1.5em sans-serif;
+  margin-top: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.fa {
+  color: #ccc;
+  font-size: 1.4em;
+  margin: 0 7px 0 0;
+}
+
+.fa:hover {
+  color: #888;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
